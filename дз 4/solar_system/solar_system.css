@@ -1,0 +1,438 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET END */
+
+body {
+  background-image: url("фон.jpg");
+}
+
+/* -------------- ORBIT --------------*/
+
+.orbit-mercury {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em;
+  transform: scale(1.2, 0.3);
+}
+.orbit-venus {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em;
+  transform: scale(1.2, 0.3);
+}
+.orbit-earth {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em;
+  transform: scale(1.2, 0.3);
+}
+.orbit-mars {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 26em;
+  height: 26em;
+  margin-top: -13em;
+  margin-left: -13em;
+  transform: scale(1.4, 0.3);
+}
+.orbit-jupiter {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 32em;
+  height: 32em;
+  margin-top: -16em;
+  margin-left: -16em;
+  transform: scale(1.8, 0.5);
+}
+.orbit-saturn {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 38em;
+  height: 38em;
+  margin-top: -19em;
+  margin-left: -19em;
+  transform: scale(2.1, 0.6);
+}
+.orbit-uranus {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 44em;
+  height: 44em;
+  margin-top: -22em;
+  margin-left: -22em;
+  transform: scale(2, 0.6);
+}
+.orbit-neptune {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  width: 50em;
+  height: 50em;
+  margin-top: -25em;
+  margin-left: -25em;
+  transform: scale(2.1, 0.6);
+}
+
+/* IMAGES */
+
+#sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+#mercury {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  margin-top: -7.5px;
+  margin-left: -7.5px;
+  animation: mercury 3s linear infinite;
+}
+#venus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  animation: venus 7s linear infinite;
+}
+#earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  animation: earth 10s linear infinite;
+}
+#mars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -13px;
+  animation: mars 20s linear infinite;
+}
+#jupiter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: jupiter 50s linear infinite;
+}
+#saturn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  animation: saturn 100s linear infinite;
+}
+#uranus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  animation: uranus 150s linear infinite;
+}
+#neptune {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  animation: neptune 200s linear infinite;
+}
+
+/* INDEX */
+
+#mercury {
+  z-index: 10;
+}
+#venus {
+  z-index: 9;
+}
+#earth {
+  z-index: 8;
+}
+#moon {
+  z-index: 7;
+}
+#mars {
+  z-index: 6;
+}
+#jupiter {
+  z-index: 5;
+}
+#saturn {
+  z-index: 4;
+}
+#uranus {
+  z-index: 3;
+}
+#neptune {
+  z-index: 2;
+}
+#sun {
+  z-index: 1;
+}
+
+/* -------------- ANIMATION --------------*/
+
+@keyframes mercury {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(4em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(4em);
+  }
+}
+@keyframes venus {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(7em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(7em);
+  }
+}
+@keyframes earth {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(10em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(10em);
+  }
+}
+@keyframes mars {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(13em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(13em);
+  }
+}
+@keyframes jupiter {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(16em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(16em);
+  }
+}
+@keyframes saturn {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(19em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(19em);
+  }
+}
+@keyframes uranus {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(22em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(22em);
+  }
+}
+@keyframes neptune {
+  from {
+    transform: scale(1, 1) rotate(0deg) translateY(25em);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(360deg) translateY(25em);
+  }
+}
+
+/* Можете подсказать, пожалуйста, не могу понять, как сделать чтоб к картинкам не применялось scale,
+и как сделать чтоб при пролете планеты перед солнцем ее было видно*/

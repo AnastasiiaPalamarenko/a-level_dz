@@ -1,0 +1,344 @@
+html 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link media="all" rel="stylesheet" href="style_dz5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="logo.svg" alt="logo" />
+      <ul class="menu">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+      </ul>
+    </header>
+    <div class="main-container">
+      <main class="main">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, quod
+          pariatur ducimus provident error quibusdam ut at magni, obcaecati
+          nihil autem est temporibus animi modi impedit fugit maxime atque
+          cupiditate.
+        </p>
+        <h1 class="our-work">OUR WORK</h1>
+        <div class="main-container_content">
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+          <div class="main-container_content_box">
+            <img src="Twitter-logo.svg.png" />
+            <h1>Lorem ipsum dolor sit, amet</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+              quod pariatur ducimus provident error quibusdam ut at magni
+            </p>
+            <a href="">Go</a>
+          </div>
+        </div>
+      </main>
+      <aside class="aside-left"><p>Aside 1</p></aside>
+      <aside class="aside-right"><p>Aside 2</p></aside>
+    </div>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
+
+
+css
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET END */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(184, 159, 18);
+  width: 100%;
+}
+.logo {
+  width: 13%;
+  padding: 25px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 0 10px;
+  padding: 25px;
+}
+.main-container {
+  display: flex;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  order: 2;
+  text-align: center;
+}
+.main p {
+  margin: 15px;
+}
+.main h1 {
+  font-weight: bold;
+}
+.our-work {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.main-container_content {
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+.main-container_content_box {
+  display: inline-block;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.4s;
+  border: 1px solid #854f82;
+}
+.main-container_content_box img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+  border: 8px solid #857884;
+}
+.main-container_content_box h1 {
+  margin-bottom: 15px;
+}
+.main-container_content_box a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: white;
+  background-color: #857884;
+  border-radius: 30px;
+}
+.main-container_content_box:hover {
+    background-color: grey;
+}
+.aside-left {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  order: 1;
+  width: 210px;
+  background-color: rgb(221, 160, 221);
+}
+.aside-left p {
+  padding: 15px;
+}
+.aside-right {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  order: 3;
+  width: 210px;
+  background-color: rgb(126, 153, 172);
+}
+.aside-right p {
+  padding: 15px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(149, 245, 140);
+  width: 100%;
+}
+footer p {
+  padding: 15px;
+}
+
+/* НЕ понимаю почему ширина к aside не фиксируется*/

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link media="all" rel="stylesheet" href="style.css">
+    <style>
+q {
+    color:blue;
+}
+    </style>
+</head>
+<body>
+<q style="color:red ">Никогда не ошибается тот, кто ничего не делает</q>
+<!--
+    Высший приоритет имеет стиль заданный через атрибут
+-->
+    
+<div class="holder">
+    <h1>Title</h1>
+    <ul class="list">
+        <li>
+            <a href="#">link1</a>
+            <ul>
+                <li><a title="youtube" href="https://www.youtube.com/">link2</a></li>
+                <li><a href="#">link3</a></li>
+            </ul>
+        </li>
+        <li><a title="youtube" href="https://www.youtube.com/">link4</a></li>
+        <li><a href="https://validator.w3.org/" title="link">link5</a></li>
+        <li><a href="#">link6</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h2>Ttile</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+<!--
+        третий уровень
+    -->
+
+
+<div class="text-box">
+    <h3>Покрасьте меня в розовый</h3>
+    <p>Должен остаться неоформленным</p>
+    <p id="greycol">Покрасьте меня в серый</p>
+    <div>Данный элемент должен остаться неоформленным</div>
+    <h3>Данный элемент должен остаться неоформленным</h3>
+    <div>
+        <p>Покрасьте меня в красный</p>
+    </div>
+    <h3 title="text">У меня текст будет синим</h3>
+    <p>Покрасьте меня в зеленый</p>
+    <p class="yellow">Покрасьте меня в желтый</p>
+</div>
+
+
+</body>
+</html>
